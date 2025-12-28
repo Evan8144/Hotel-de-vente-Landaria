@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landaria HDV Analyzer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("Fond1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .blur-container {
+      min-height: 100vh;
+      backdrop-filter: blur(0.5px);
+      -webkit-backdrop-filter: blur(0.5px);
+    }
+
+    header {
+      position: relative;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    /* LOGO */
+    .logo {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      height: 60px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    header .description {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    header a {
+      color: #2ecc99;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .items-section h2 {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+      padding-bottom: 8px;
+      color: rgb(255, 0, 0);
+    }
+
+    .items-list {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .items-list li {
+      padding: 8px 12px;
+      margin-bottom: 4px;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #ccc;
+      background: rgba(0, 0, 0, 1);
+    }
+
+    /* Responsive mobile */
+    @media (max-width: 600px) {
+      .logo {
+        height: 50px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blur-container">
+
+    <header>
+      <img src="logo.png" alt="Logo Landaria" class="logo">
+
+      <h1>Landaria HDV Analyzer</h1>
+      <p class="description">
+        Les données sont issues du salon
+        <a href="https://discord.com/landaria">hotel des ventes du salon Discord Landaria</a>.<br />
+        Les items divergeant de 40% à 250% de la médiane sont exclus.<br />
+        <a href="https://landaria.fr">Retour sur Landaria</a>
+      </p>
+    </header>
+
+    <main>
+      <section class="items-section">
+        <h2>Items exclus</h2>
+        <ul class="items-list">
+          <li>Acacia Log</li>
+          <li>Arrow</li>
+          <li>Beetroot</li>
+          <li>Cactus</li>
+          <li>Dirt</li>
+          <li>Glass</li>
+          <li>Obsidian</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Landaria — Données publiques
+      <p>Aucune affiliation avec Landaria</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
